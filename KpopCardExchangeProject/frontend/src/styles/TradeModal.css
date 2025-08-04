@@ -1,0 +1,129 @@
+.trade-modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1050;
+}
+
+.trade-modal-content {
+    background: var(--modal-bg, linear-gradient(to bottom right, #fef4fd, #ffffff));
+    padding: 2rem;
+    border-radius: 16px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 12px 24px var(--modal-shadow, rgba(201, 58, 255, 0.2));
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.trade-modal-content h4 {
+    color: var(--primary-color, #a847ff);
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.trade-modal-content label {
+    color: var(--secondary-color, #7c2ae8);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.trade-modal-content .form-select {
+    border: 2px solid var(--input-border-color, #e5ccff);
+    border-radius: 8px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: var(--input-bg-color, #fff);
+    color: var(--input-text-color, #333);
+    transition: border-color 0.3s ease;
+}
+
+.trade-modal-content .form-select:focus {
+    border-color: var(--primary-color, #a847ff);
+    box-shadow: 0 0 6px var(--input-shadow-color, rgba(168, 71, 255, 0.2));
+    outline: none;
+}
+
+.trade-modal-content .modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 1rem;
+}
+
+.trade-modal-content .btn {
+    border-radius: 10px;
+    font-weight: 500;
+    padding: 0.5rem 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.trade-modal-content .btn-primary {
+    background-color: var(--primary-color, #a847ff);
+    border: none;
+    color: var(--btn-text-color, white);
+}
+
+.trade-modal-content .btn-primary:hover {
+    background-color: var(--btn-hover-color, #822ddf);
+}
+
+.trade-modal-content .btn-secondary {
+    background-color: var(--secondary-btn-bg, #ccc);
+    border: none;
+    color: var(--secondary-btn-text, #333);
+}
+
+.trade-modal-content .btn-secondary:hover {
+    background-color: var(--secondary-btn-hover, #bbb);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 500px) {
+    .trade-modal-content {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    .trade-modal-content .modal-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .trade-modal-content .btn {
+        width: 100%;
+    }
+}
+
+.dark .trade-modal-content {
+    --modal-bg: linear-gradient(to bottom right, #3c354f, #2e2841);
+    --modal-shadow: rgba(0, 0, 0, 0.5);
+    --primary-color: #bb86fc;
+    --secondary-color: #d7aaff;
+    --input-border-color: #443f59;
+    --input-bg-color: #343048;
+    --input-text-color: #eaeaea;
+    --input-shadow-color: rgba(187, 134, 252, 0.4);
+    --btn-text-color: #fff;
+    --btn-hover-color: #9d6bf9;
+    --secondary-btn-bg: #555069;
+    --secondary-btn-text: #f0f0f0;
+    --secondary-btn-hover: #4a4561;
+}

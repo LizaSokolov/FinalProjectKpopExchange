@@ -1,0 +1,54 @@
+[
+    {
+        "name": {
+            "first": "John",
+            "middle": "A",
+            "last": "Doe"
+        },
+        "email": "john@email.com",
+        "password": "John123!",
+        "authLevel": 1,
+        "notifications": [],
+        "tradeHistory": [],
+        "createdAt": "2025-03-06T14:00:00.000Z"
+    },
+    {
+        "name": {
+            "first": "Jane",
+            "middle": "",
+            "last": "Melony"
+        },
+        "email": "janeMelony@email.com",
+        "password": "JaneM123!",
+        "authLevel": 2,
+        "notifications": [],
+        "tradeHistory": [],
+        "createdAt": "2025-03-06T14:00:00.000Z"
+    },
+    {
+        "name": {
+            "first": "Jim",
+            "middle": "B",
+            "last": "Berry"
+        },
+        "email": "jim@email.com",
+        "password": "JimB123!",
+        "authLevel": 1,
+        "notifications": [],
+        "tradeHistory": [],
+        "createdAt": "2025-03-06T14:00:00.000Z"
+    },
+    {
+        "name": {
+            "first": "Admin",
+            "middle": "Super",
+            "last": "User"
+        },
+        "email": "admin@email.com",
+        "password": "Admin123!",
+        "authLevel": 3,
+        "notifications": [],
+        "tradeHistory": [],
+        "createdAt": "2025-03-06T14:00:00.000Z"
+    }
+]

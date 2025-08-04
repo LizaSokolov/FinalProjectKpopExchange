@@ -1,0 +1,26 @@
+[
+    {
+        "idol": "Bang Chan",
+        "group": "Stray Kids",
+        "album": "5-STAR",
+        "imageUrl": "https://kpopmarket.co/cdn/shop/files/bangchan01_1024x1024.jpg?v=1697705344",
+        "status": "available",
+        "owner": "67dfd2513b3cbb06db3fe2b3"
+    },
+    {
+        "idol": "Lisa",
+        "group": "BLACKPINK",
+        "album": "LALISA",
+        "imageUrl": "https://u-mercari-images.mercdn.net/photos/m92468668639_1.jpg",
+        "status": "available",
+        "owner": "67dfd2513b3cbb06db3fe2b2"
+    },
+    {
+        "idol": "Hyunjin",
+        "group": "Stray Kids",
+        "album": "NOEASY",
+        "imageUrl": "https://i.ebayimg.com/images/g/BjgAAOSwyBFmg6Xo/s-l1600.webp",
+        "status": "available",
+        "owner": "67dfd2513b3cbb06db3fe2b1"
+    }
+]

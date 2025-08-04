@@ -1,0 +1,72 @@
+.public-profile {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2rem;
+    border-radius: 16px;
+    background-color: var(--bg-color, #fef4fd);
+    box-shadow: 0 10px 30px var(--box-shadow-color, rgba(255, 105, 180, 0.15));
+    text-align: center;
+    color: var(--text-color, #333);
+}
+
+.public-profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 10px var(--img-shadow-color, rgba(201, 58, 255, 0.3));
+}
+
+.public-profile h2 {
+    color: var(--primary-color, #c93aff);
+    margin-bottom: 0.5rem;
+}
+
+.public-profile p {
+    color: var(--secondary-text-color, #555);
+    font-size: 1.05rem;
+    margin-bottom: 1.5rem;
+}
+
+.public-profile h3 {
+    margin-top: 2rem;
+    color: var(--secondary-color, #a847ff);
+}
+
+.public-profile .group-tags span {
+    background-color: var(--tag-bg-color, #f4eaff);
+    color: var(--secondary-color, #a847ff);
+    padding: 6px 12px;
+    margin: 0.3rem;
+    display: inline-block;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.cards-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+@media (max-width: 600px) {
+    .cards-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.dark .public-profile {
+    --bg-color: #2c2c3a;
+    --box-shadow-color: rgba(0, 0, 0, 0.5);
+    --text-color: #f0f0f0;
+    --primary-color: #d6a5ff;
+    --secondary-text-color: #ccc;
+    --secondary-color: #bb86fc;
+    --tag-bg-color: #3a3a4e;
+    --img-shadow-color: rgba(214, 165, 255, 0.4);
+}

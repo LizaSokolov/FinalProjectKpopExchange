@@ -1,0 +1,104 @@
+.edit-profile-container {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff0f9;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(203, 58, 255, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dark .edit-profile-container {
+    background-color: #2a1e2f;
+    box-shadow: 0 10px 25px rgba(168, 71, 255, 0.15);
+}
+
+.edit-profile-container h2 {
+    text-align: center;
+    color: #a847ff;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.dark .edit-profile-container h2 {
+    color: #e8b0ff;
+}
+
+.edit-profile-container .form-label {
+    font-weight: 500;
+    color: #7c2ae8;
+    display: block;
+    margin-bottom: 0.4rem;
+}
+
+.dark .edit-profile-container .form-label {
+    color: #d2aaff;
+}
+
+.edit-profile-container .form-control {
+    border: 2px solid #e5ccff;
+    border-radius: 10px;
+    padding: 10px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    background-color: #fff;
+    color: #2a2a2a;
+}
+
+.edit-profile-container .form-control:focus {
+    border-color: #a847ff;
+    outline: none;
+    box-shadow: 0 0 10px rgba(168, 71, 255, 0.3);
+}
+
+.dark .edit-profile-container .form-control {
+    background-color: #1e1e2b;
+    color: #eee;
+    border: 2px solid #a273ff;
+}
+
+.dark .edit-profile-container .form-control:focus {
+    border-color: #e3a8ff;
+    box-shadow: 0 0 10px rgba(234, 171, 255, 0.4);
+}
+
+.edit-profile-container textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.dark .edit-profile-container textarea {
+    background-color: #1e1e2b;
+    color: #eee;
+}
+
+.edit-profile-container .btn-primary {
+    background-color: #a847ff;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 1rem;
+    color: #fff;
+}
+
+.edit-profile-container .btn-primary:hover {
+    background-color: #822ddf;
+}
+
+@media (max-width: 600px) {
+    .edit-profile-container {
+        padding: 1.5rem 1rem;
+    }
+
+    .edit-profile-container h2 {
+        font-size: 1.4rem;
+    }
+
+    .edit-profile-container .btn-primary {
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+}

@@ -1,0 +1,119 @@
+.page-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 1rem;
+}
+
+.chatlist-container {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff5fd;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(203, 58, 255, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark .chatlist-container {
+    background-color: #2a1e2f;
+    color: #eee;
+}
+
+.chatlist-container h3 {
+    text-align: center;
+    color: #b830ff;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    font-size: 1.6rem;
+    transition: color 0.3s ease;
+}
+
+.dark .chatlist-container h3 {
+    color: #d679ff;
+}
+
+.chatlist-empty {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+.dark .chatlist-empty {
+    color: #cfcfcf;
+}
+
+.chatlist-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #faf0ff;
+    border: 2px solid #e5ccff;
+    padding: 0.75rem 1rem;
+    border-radius: 12px;
+    margin-bottom: 0.8rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.chatlist-item:hover {
+    background-color: #f3dfff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(191, 81, 255, 0.15);
+}
+
+.dark .chatlist-item {
+    background-color: #392942;
+    border: 2px solid #6e4b83;
+}
+
+.dark .chatlist-item:hover {
+    background-color: #4e375b;
+    box-shadow: 0 4px 12px rgba(234, 180, 255, 0.15);
+}
+
+.chatlist-btn {
+    border-radius: 8px;
+    font-weight: 500;
+    color: #a847ff;
+    border: 1px solid #a847ff;
+    background-color: transparent;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    padding: 5px 14px;
+}
+
+.chatlist-btn:hover {
+    background-color: #a847ff;
+    color: white;
+}
+
+.dark .chatlist-btn {
+    color: #eec7ff;
+    border-color: #eec7ff;
+}
+
+.dark .chatlist-btn:hover {
+    background-color: #eec7ff;
+    color: #2b1c37;
+}
+
+@media (max-width: 600px) {
+    .chatlist-container {
+        padding: 1.5rem 1rem;
+    }
+
+    .chatlist-container h3 {
+        font-size: 1.4rem;
+    }
+
+    .chatlist-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .chatlist-btn {
+        align-self: flex-end;
+    }
+}

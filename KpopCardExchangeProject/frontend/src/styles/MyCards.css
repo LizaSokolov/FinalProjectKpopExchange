@@ -1,0 +1,98 @@
+.my-cards-container {
+    padding: 2rem 1rem;
+}
+
+.my-card {
+    background-color: var(--card-bg);
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(255, 105, 180, 0.12);
+    padding: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.my-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 30px rgba(255, 105, 180, 0.2);
+}
+
+.my-card img {
+    border-radius: 12px;
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+}
+
+.my-card h5 {
+    margin-top: 0.5rem;
+    font-weight: 600;
+    color: #c93aff;
+    transition: color 0.3s ease;
+}
+
+.dark .my-card h5 {
+    color: #d5aaff;
+}
+
+.my-card p {
+    margin: 0;
+    color: #666;
+    transition: color 0.3s ease;
+}
+
+.dark .my-card p {
+    color: #ccc;
+}
+
+.my-card button {
+    border-radius: 8px;
+    font-weight: 500;
+    padding: 6px 12px;
+}
+
+.trade-box {
+    background-color: #f4eaff;
+    border: 1px solid #d9c2ff;
+    border-radius: 12px;
+    padding: 0.75rem;
+    margin-top: 0.75rem;
+    font-size: 0.95rem;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.dark .trade-box {
+    background-color: #2e2540;
+    border-color: #a273ff;
+}
+
+.trade-box p {
+    margin-bottom: 0.3rem;
+}
+
+.trade-box strong {
+    color: #a847ff;
+}
+
+.trade-box .btn-success {
+    background-color: #a847ff;
+    border: none;
+}
+
+.trade-box .btn-success:hover {
+    background-color: #822ddf;
+}
+
+.trade-box .btn-outline-danger {
+    border-color: #ff4eb5;
+    color: #ff4eb5;
+}
+
+.trade-box .btn-outline-danger:hover {
+    background-color: #ff4eb5;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .my-card img {
+        height: 250px;
+    }
+}

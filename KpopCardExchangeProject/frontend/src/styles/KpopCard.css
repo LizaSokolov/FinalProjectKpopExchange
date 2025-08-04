@@ -1,0 +1,65 @@
+.kpop-card {
+    border-radius: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    overflow: hidden;
+    background-color: var(--card-bg) !important;
+    border: none;
+    box-shadow: 0 8px 16px rgba(179, 115, 248, 0.1);
+    height: 100%;
+    cursor: pointer;
+}
+
+.kpop-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(179, 115, 248, 0.2);
+}
+
+.dark .kpop-card {
+    background-color: var(--card-bg) !important;
+    box-shadow: 0 8px 16px rgba(179, 115, 248, 0.05);
+}
+
+.kpop-card .card-img-top {
+    border-radius: 12px;
+    transition: transform 0.4s ease;
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+}
+
+.kpop-card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+.kpop-card .card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #a847ff;
+    margin-bottom: 0.3rem;
+    transition: color 0.3s ease;
+}
+
+.dark .kpop-card .card-title {
+    color: #d5aaff;
+}
+
+.kpop-card .card-text {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 1rem;
+    transition: color 0.3s ease;
+}
+
+.dark .kpop-card .card-text {
+    color: #ccc;
+}
+
+@media (max-width: 768px) {
+    .kpop-card {
+        margin-bottom: 1rem;
+    }
+
+    .kpop-card .card-img-top {
+        height: 250px;
+    }
+}

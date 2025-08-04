@@ -1,0 +1,113 @@
+.notifications-container {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 1.5rem;
+    border-radius: 16px;
+    background-color: #fef4fd;
+    color: #444;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html.dark .notifications-container {
+    background-color: #2a1e2f;
+    color: #eee;
+}
+
+.notifications-container h2 {
+    color: #c93aff;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+html.dark .notifications-container h2 {
+    color: #e786ff;
+}
+
+.notification-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    padding: 1rem 1.2rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.1);
+    background-color: #fff;
+    color: #333;
+    animation: fadeIn 0.4s ease-in-out;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html.dark .notification-box {
+    background-color: #38253e;
+    color: #eee;
+    box-shadow: 0 4px 15px rgba(201, 58, 255, 0.15);
+}
+
+.notification-box strong {
+    color: #a847ff;
+}
+
+html.dark .notification-box strong {
+    color: #d57bff;
+}
+
+.notification-box em {
+    color: #c93aff;
+}
+
+html.dark .notification-box em {
+    color: #f0b4ff;
+}
+
+.notification-box .btn {
+    border-radius: 50%;
+    font-weight: bold;
+    padding: 4px 10px;
+    font-size: 0.85rem;
+}
+
+.notification-warning {
+    background-color: #fff3cd;
+    border: 1px solid #ffeeba;
+}
+
+html.dark .notification-warning {
+    background-color: #4d3b28;
+    border: 1px solid #e0c184;
+    color: #fff1c1;
+}
+
+.notification-success {
+    background-color: #e6ffea;
+    border: 1px solid #c3f3d1;
+}
+
+html.dark .notification-success {
+    background-color: #23412f;
+    border: 1px solid #75e1a2;
+    color: #c9f7dd;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+    .notification-box {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .notification-box .btn {
+        align-self: flex-end;
+    }
+}
